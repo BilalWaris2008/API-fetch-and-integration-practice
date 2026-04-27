@@ -4,26 +4,31 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: green;
+    --sec-color: white;
+}
+
 ::selection {
-    background-color: green;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--sec-color);
 }
 
 .navbar {
-    border-bottom: 7px solid green;
+    border-bottom: 7px solid var(--primary-color);
 }
 
 .custom-hover {
-    background-color: green;
-    border: 2px solid green;
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
     transition: 0.3s;
 }
 
 .custom-hover:hover {
     transform: translateY(-5px);
     box-shadow: 5px 5px 3px 0 lightgrey;
-    background-color: white;
-    color: green;
+    background-color: var(--sec-color);
+    color: var(--primary-color);
     font-weight: bold;
-    border: 2px solid green;
+    border: 2px solid var(--primary-color);
 }
